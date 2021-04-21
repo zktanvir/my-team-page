@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+
+*{
+				padding:0;
+				margin:0;
+}
+
+.header {
+				padding: 1rem;
+}
+
+
+.header .h1 {
+				font-family: 'PT Serif', sans-serif;
+				font-weight: 700;
+				font-size: 2.25rem;
+				letter-spacing: -.02rem;
+				margin-bottom: 1rem;
+}
+
+.header .h5 {
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				font-size: 1.125rem;
+}
+
+
+.header .content {
+				font-family: 'Poppins', sans-serif;
+				font-weight: 400;
+				font-size: .875rem;
+}
+
+@media screen and (min-width: 600px) {
+				.header {
+								display: grid;
+								grid-template-columns: 1fr 1fr;
+				}
+				.header .h1 {
+								text-align: center;
+								
+				}
+			 .header .content {
+			 				font-size: 1rem; 
+			 }
+}
+
+
+img {
+				display: grid;
+				width: 170px;
+				height: auto;
+}
+
+.grid-container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: minmax(300px, auto);
+				grid-gap: 1rem;
+				margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+				.grid-container {
+								display: grid;
+								grid-template-columns: 1fr 1fr 1fr;
+								margin-top: 2.5rem;
+								margin-bottom: 2.5rem;
+								justify-items: center;
+				}
+		   
+}
+
+.member {
+				margin-bottom: 2rem;
+}
+
+.member-job {
+				font-family: 'PT Serif', sans-serif;
+				font-weight: 400;
+				font-size: .650rem;
+				writing-mode: vertical-rl;
+				
+}
+
+.member-name{
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				font-size: .875rem;
+				
+}
+
+.member-data {
+				display:flex;
+				position: relative;
+}
+
+.member:nth-child(even){
+				margin-top: 2.8rem;
+}
+
+@media screen and (min-width: 600px) 
+{
+				.member:nth-child(even){
+								margin-top: 0;
+				}
+				
+				.member:nth-child(2){
+								margin-top: 2.75rem;
+				}
+				.member:nth-child(5) {
+								margin-top: 2.75rem;
+				}
+}
+
+
+footer {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 500;
+				color: #A9A9A9;
+				text-align: center;
+				font-size: .860rem;
+
+}
+footer > a {
+				
+				font-weight: 600;
+				color: #A9A9A9;
+				text-decoration: none;
+}
